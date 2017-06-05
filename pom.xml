@@ -48,7 +48,10 @@
   <packaging>war</packaging>
   <name>Automated Test Depending on JSF 2.1</name>
   
-  <build>
+  <name>mobile</name>
+  <url>http://maven.apache.org</url>
+ 
+ <build>
     <finalName>test-${project.artifactId}</finalName>
   </build>
   
@@ -305,11 +308,7 @@
         <name>Reddymurali-releases</name>
         <url>http://localhost:8081/artifactory/mobile</url>
     </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>Reddymurali-snapshots</name>
-        <url>http://localhost:8081/artifactory/mobile</url>
-    </snapshotRepository>
+    
 </distributionManagement>
     
 
