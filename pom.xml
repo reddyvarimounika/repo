@@ -51,7 +51,7 @@
 
 <scm>
       <connection>scm:git:https://github.com/reddyvarimounika/repo.git</connection>
-      <developerConnection>scm:git:https://github.com/reddyvarimounika/repo.git<developerConnection>
+      <developerConnection>scm:git:https://github.com/reddyvarimounika/repo.git</developerConnection>
     </scm>
  
  <build>
