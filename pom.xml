@@ -47,9 +47,12 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>Automated Test Depending on JSF 2.1</name>
-  
-  <name>mobile</name>
-  <url>http://maven.apache.org</url>
+<url>http://maven.apache.org</url>
+
+<scm>
+      <connection>scm:git:https://github.com/reddyvarimounika/repo.git</connection>
+      <developerConnection>scm:git:https://github.com/reddyvarimounika/repo.git<developerConnection>
+    </scm>
  
  <build>
     <finalName>test-${project.artifactId}</finalName>
