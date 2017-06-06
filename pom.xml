@@ -58,6 +58,13 @@
  
  <build>
     <finalName>test-${project.artifactId}</finalName>
+	    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
+    </plugins>
   </build>
   
   <dependencies>
@@ -87,124 +94,13 @@
     </dependency>
   </dependencies>
   
+
+ 
+  
   <profiles>
     <profile>
       <id>faces-test</id>
-      <build>
-        <pluginManagement>
-          <plugins>
-         <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-release-plugin</artifactId>
-        <version>2.5.3</version>
-		
-      </plugin>
-            <plugin>
-              <artifactId>maven-antrun-plugin</artifactId>
-              <version>1.7</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-assembly-plugin</artifactId>
-              <version>2.2-beta-2</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-clean-plugin</artifactId>
-              <version>2.2</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-compiler-plugin</artifactId>
-              <version>3.0</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-dependency-plugin</artifactId>
-              <version>2.6</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-deploy-plugin</artifactId>
-              <version>2.4</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-ear-plugin</artifactId>
-              <version>2.3.1</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-ejb-plugin</artifactId>
-              <version>2.1</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-install-plugin</artifactId>
-              <version>2.2</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-jar-plugin</artifactId>
-              <version>2.2</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-javadoc-plugin</artifactId>
-              <version>2.5</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-plugin-plugin</artifactId>
-              <version>2.4.3</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-rar-plugin</artifactId>
-              <version>2.2</version>
-            </plugin>
-            
-            <plugin>
-              <artifactId>maven-failsafe-plugin</artifactId>
-              <version>2.12.4</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-resources-plugin</artifactId>
-              <version>2.6</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-site-plugin</artifactId>
-              <version>3.2</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-source-plugin</artifactId>
-              <version>2.0.4</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-surefire-plugin</artifactId>
-              <version>2.4.3</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-surefire-report-plugin</artifactId>
-              <version>2.12.4</version>
-            </plugin>
-            <plugin>
-              <artifactId>maven-war-plugin</artifactId>
-              <version>2.3</version>
-            </plugin>
-          </plugins>
-        </pluginManagement>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <inherited>true</inherited>
-            <configuration>
-              <source>1.6</source>
-              <target>1.6</target>
-              <encoding>${project.build.sourceEncoding}</encoding>
-            </configuration>
-          </plugin>
-          <plugin>
-            <artifactId>maven-resources-plugin</artifactId>
-            <version>2.6</version>
-            <inherited>true</inherited>
-            <configuration>
-              <encoding>${project.build.sourceEncoding}</encoding>
-            </configuration>
-          </plugin>
-   
-  </plugins>
-        
-      </build>
+
 
       <repositories>
         <repository>
