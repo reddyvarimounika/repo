@@ -145,11 +145,7 @@
               <artifactId>maven-rar-plugin</artifactId>
               <version>2.2</version>
             </plugin>
-            <plugin>
-
-        <artifactId>maven-release-plugin</artifactId>
-        <version>2.5.3</version>
-      </plugin>
+            
             <plugin>
               <artifactId>maven-failsafe-plugin</artifactId>
               <version>2.12.4</version>
@@ -308,6 +304,16 @@
 
 
   </profiles>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
+    </plugins>
+   
+  </build>
 
   <distributionManagement>
     <repository>
