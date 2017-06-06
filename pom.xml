@@ -44,7 +44,7 @@
   
   <groupId>com.in</groupId>
   <artifactId>mobile</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>Automated Test Depending on JSF 2.1</name>
 <url>http://maven.apache.org</url>
