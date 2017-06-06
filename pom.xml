@@ -53,7 +53,7 @@
       <connection>scm:git:https://github.com/reddyvarimounika/repo.git</connection>
       <developerConnection>scm:git:https://github.com/reddyvarimounika/repo.git</developerConnection>
 	  <url>https://github.com/reddyvarimounika/repo.git</url>
-      <tag>mobile-1.0</tag>
+      
   </scm>
  
  <build>
