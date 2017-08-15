@@ -329,8 +329,11 @@
         <name>Reddymurali-releases</name>
         <url>http://localhost:8081/artifactory/mobile</url>
     </repository>
-    
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>Reddymurali-snapshots</name>
+        <url>http://localhost:8081/artifactory/mobile</url>
+    </snapshotRepository>
 </distributionManagement>
-    
 
 </project>
